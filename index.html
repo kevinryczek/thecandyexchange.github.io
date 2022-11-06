@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link href="https://fonts.cdnfonts.com/css/zombie-control" rel="stylesheet">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Candy exchange</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/7cdc31931b.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <h3>THE CANDY EXCHANGE</h3>
+          <ul id="sidemenu">
+            <li><a href="#header">Markets</a></li>
+            <li><a href="#grave">Graveyard</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#candies"></a></li>
+            <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+      </div>
+    </div>
+    <div id="candies">
+      <div class="container">
+        <h1 class="sub-title">Cursed Candy Markets</h1>
+        <div class="candies-list">
+          <div>
+            <h2>M&M</h2>
+            <p>
+              $<span id="bitcoin"></span>
+            </p>
+            <img src="m&m.tiff">
+          </div>
+          <div>
+            <h2>Snickers</h2>
+            <p>
+              $<span id="ethereum"></span>
+            </p>
+            <img src="snickers.tiff">
+          
+          </div>
+          <div>
+            <h2>KitKat</h2>
+            <p>
+              $<span id="maker"></span>
+            </p>
+            <img src="kitkat.jpg">
+          </div>
+        </div>
+        <h1 class="sub-title"></h1>
+        <div class="candies-list">
+          <div>
+            <h2>Twix</h2>
+            <p>
+              $<span id="litecoin"></span>
+            </p>
+            <img src="twix.tiff">
+            
+            
+          </div>
+          <div>
+            <h2>Reese's Peanut Butter Cups</h2>
+            <p>
+              $<span id="solana"></span>
+            </p>
+            <img src="reesepbc.jpg">
+            
+          </div>
+          <div>
+            <h2>Hershey Milk Chococlate</h2>
+            <p>
+              $17.32<span id="avalanche"></span>
+            </p>
+            <img src="hersheymc.tiff">
+          </div>
+        </div>
+        <h1 class="sub-title"></h1>
+        <div class="candies-list">
+          <div>
+            <h2>Hershey Cookies N Cream</h2>
+            <p>
+              $7.80<span id="polkadot"></span>
+            </p>
+            <img src="hersheycnc.jpg">
+            
+          </div>
+          <div>
+            <h2>Three Musketeers</h2>
+            <p>
+              $3.55<span id="tether"></span>
+            </p>
+            <img src="three.tiff">
+          </div>
+          <div>
+            <h2 href="">Milky Way</h2>
+            <p>
+              $2.17<span id="dogecoin"></span>
+            </p>
+            <img src="milkyway.tiff">
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--------------------------graveyard---------------------->
+    <div id="grave">
+      <div class="container">
+        <h1 class="sub-title">Snack Graveyard</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="starburst.jpg" />
+            <div class="layer">
+              <h3>Starburst Hard Candies</h3>
+              <p>
+                A tooth shattering treat that left everyone toothless!
+              </p>
+              <a href="https://www.starburst.com/"
+                ><i class="fa-regular fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="butterfinger.png" />
+            <div class="layer">
+              <h3>Butterfinger BB's</h3>
+              <p>
+                Composed of the most dangerous toxins that left the healthiest dead!
+              </p>
+              <a href="https://www.butterfinger.com/"
+                ><i class="fa-regular fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="tastetations.jpg" />
+            <div class="layer">
+              <h3>Marathon Bar</h3>
+              <p>
+                A bar filled with nutritious tapeworm eggs that satisfied every empty stomach on Halloween!
+              </p>
+              <a href="https://www.snackhistory.com/marathon-bar/"
+                ><i class="fa-regular fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!------------------about----------------------->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1 active-img">
+            <img src="portrait.jpg"/>
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About The EXCHANGE</h1>
+            <p>
+              A site that can be utilized for viewing the best performing candies in even the spookiest of times!<br>
+              <br>
+              Here are some testimonies from users:
+            </p>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Maleficent
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Jafar
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Ursula</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li><span>Why this exchange?</span> <br><br /> It's the spookiest of them all and easy to navigate even from my I-Magic phone.</li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li><span>Why do you use this exchange?</span> <br> <br />I am an extremely busy villain who does not have time to look for the best performing investment. On this website, I have it all in one place!</li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li><span>How has the exchange helped you?</span> <br><br />Over the past six months, I have been able to grow and diversify my portfolio due to the wide variety of options. </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-----------------contact---------------------->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Issues? Contact Us!</h1>
+            <p><i class="fa-solid fa-paper-plane"></i></i>thecandyexchange@gmail.com</p>
+            <p><i class="fa-solid fa-square-phone"></i></i>1-(773)-397-3795</p>
+            <div class="social-icons">
+              <a href="https://facebook.com/"
+                ><i class="fa-brands fa-facebook"></i
+              ></a>
+              <a href="https://twitter.com/?lang=en"><i class="fa-brands fa-twitter-square"></i></a>
+              <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+              <a href="https://www.linkedin.com/in/kevin-ryczek-4b0b51255"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+            <a href="sourceCode.html" download class="btn btn2">Download Source Code</a>
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="Email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea name="Message" rows="6" placeholder="Your Message" ></textarea>
+              </textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>Copyright © THE CANDY EXCHANGE - Thank you to the spooky organizers and sponsors!</p>
+      </div>
+    </div>
+
+    <!---------------------------movingTabs------------------------>
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
+    <!-------------------------close&open menu------------------------------->
+    <script>
+      var sidemenu = document.getElementById("sidemenu");
+      function openmenu(){
+        sidemenu.style.right = "0";
+      }
+      function closemenu(){
+        sidemenu.style.right = "-200px";
+      }
+    </script>
+    <!-------------------------IMPORTED FROM GITHUB (@jamiewilson) ------------------------------->
+    <script>
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbwwrxyUoctUdrYqR6OquA_hLdf-c3DpKy0v506IuxFFPkRz6q6agUq3X30Fs9uUkNQk7g/exec'
+      const form = document.forms["submit-to-google-sheet"]
+      const msg = document.getElementById("msg")
+      form.addEventListener("submit", e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+          .then(response => {
+            msg.innerHTML = "The message was sent successfully."
+            setTimeout(function(){
+              msg.innerHTML = ""
+            },5000)
+            form.reset()
+          })
+          .catch(error => console.error('Error!', error.message))
+      })
+    </script>
+    <!------------------LIVE UPDATED PRICES-------------------------->
+    <script src="ap.js"></script>
+  </body>
+</html>
